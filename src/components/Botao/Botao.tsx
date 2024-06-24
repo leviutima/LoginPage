@@ -1,6 +1,6 @@
 import React from "react"
-import { BotaoStyle } from "./Botao.styled"
-import { Link } from "react-router-dom";
+import { BotaoStyle, LinkStyle } from "./Botao.styled"
+
 
 interface ButtonProps {
     bgColor?: string;
@@ -14,11 +14,11 @@ const Botao: React.FC<ButtonProps> = ({bgColor, borderColor, textColor,children,
     return( 
         <>
             {path ? (
-                <Link to={path}>
+                <LinkStyle to={path}>
                     <BotaoStyle bgColor={bgColor} borderColor={borderColor} textColor={textColor}>
                         <span>{children}</span>
                     </BotaoStyle>
-                </Link>
+                </LinkStyle>
             ) : (
                 <BotaoStyle bgColor={bgColor} borderColor={borderColor} textColor={textColor}>
                     <span>{children}</span>

@@ -4,7 +4,7 @@ export const AsideLogin = styled.aside `
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
     gap: 32px;
 
 

@@ -1,13 +1,14 @@
 import { InputStyle } from "./Form.styled"
 
 interface InputProps { 
-    inputType: string
+    inputType: string;
+    placeholder?: string;
 }
 
-const Form = ({inputType}: InputProps) => {
+const Form = ({inputType, placeholder}: InputProps) => {
     return(
         <>
-            <InputStyle type={inputType}></InputStyle>
+            <InputStyle type={inputType} placeholder={placeholder}></InputStyle>
         </>
     )
 }

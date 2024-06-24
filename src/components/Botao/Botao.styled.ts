@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 interface ButtonProps {
@@ -20,4 +21,8 @@ export const BotaoStyle = styled.div<ButtonProps>`
     background-color: ${(props) => props.bgColor || 'transparent'};
     color: ${(props) => props.textColor};
     border: ${(props) => props.borderColor} 1px solid;
+`
+
+export const LinkStyle = styled(Link) `
+  text-decoration: none;
 `
