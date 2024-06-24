@@ -12,3 +12,10 @@ export const SubContainer = styled.div `
     justify-items: center;
     gap: 22px;
 `
+
+export const FormContainerSign = styled.form `
+    display: grid;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+`
