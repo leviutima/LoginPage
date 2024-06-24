@@ -82,12 +82,12 @@ const SignUp: React.FC = () => {
                         </InputContainer>
                         {error && <p style={{ color: 'red' }}>{error}</p>}
                         <Botao type="submit" bgColor="rgba(112, 1, 253, 1)" textColor="#fff">
-                            Inscrever-se
+                            Sign now
                         </Botao>
                     </FormContainerSign>
                     <img src={or} alt="ou" />
                     <Botao borderColor="rgba(112, 1, 253, 1)" textColor="rgba(112, 1, 253, 1)" path="/">
-                        Login agora
+                        Login now
                     </Botao>
                 </AsideForm>
                 <Banner />
